@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBEDAF0618F683C200468890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEDAF0518F683C200468890 /* Foundation.framework */; };
+		EBEDAF0818F683C200468890 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEDAF0718F683C200468890 /* CoreGraphics.framework */; };
+		EBEDAF0A18F683C200468890 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEDAF0918F683C200468890 /* UIKit.framework */; };
+		EBEDAF1018F683C200468890 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBEDAF0E18F683C200468890 /* InfoPlist.strings */; };
+		EBEDAF1218F683C200468890 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEDAF1118F683C200468890 /* main.m */; };
+		EBEDAF1618F683C200468890 /* CardGameAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEDAF1518F683C200468890 /* CardGameAppDelegate.m */; };
+		EBEDAF1918F683C200468890 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBEDAF1718F683C200468890 /* Main.storyboard */; };
+		EBEDAF1C18F683C200468890 /* CardGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEDAF1B18F683C200468890 /* CardGameViewController.m */; };
+		EBEDAF1E18F683C200468890 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBEDAF1D18F683C200468890 /* Images.xcassets */; };
+		EBEDAF2518F683C200468890 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEDAF2418F683C200468890 /* XCTest.framework */; };
+		EBEDAF2618F683C200468890 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEDAF0518F683C200468890 /* Foundation.framework */; };
+		EBEDAF2718F683C200468890 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEDAF0918F683C200468890 /* UIKit.framework */; };
+		EBEDAF2F18F683C200468890 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EBEDAF2D18F683C200468890 /* InfoPlist.strings */; };
+		EBEDAF3118F683C200468890 /* MachiZmoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEDAF3018F683C200468890 /* MachiZmoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBEDAF2818F683C200468890 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBEDAEFA18F683C200468890 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBEDAF0118F683C200468890;
+			remoteInfo = MachiZmo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBEDAF0218F683C200468890 /* MachiZmo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MachiZmo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBEDAF0518F683C200468890 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EBEDAF0718F683C200468890 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EBEDAF0918F683C200468890 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EBEDAF0D18F683C200468890 /* MachiZmo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MachiZmo-Info.plist"; sourceTree = "<group>"; };
+		EBEDAF0F18F683C200468890 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EBEDAF1118F683C200468890 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBEDAF1318F683C200468890 /* MachiZmo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MachiZmo-Prefix.pch"; sourceTree = "<group>"; };
+		EBEDAF1418F683C200468890 /* CardGameAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardGameAppDelegate.h; sourceTree = "<group>"; };
+		EBEDAF1518F683C200468890 /* CardGameAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardGameAppDelegate.m; sourceTree = "<group>"; };
+		EBEDAF1818F683C200468890 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBEDAF1A18F683C200468890 /* CardGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardGameViewController.h; sourceTree = "<group>"; };
+		EBEDAF1B18F683C200468890 /* CardGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardGameViewController.m; sourceTree = "<group>"; };
+		EBEDAF1D18F683C200468890 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EBEDAF2318F683C200468890 /* MachiZmoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MachiZmoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBEDAF2418F683C200468890 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EBEDAF2C18F683C200468890 /* MachiZmoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MachiZmoTests-Info.plist"; sourceTree = "<group>"; };
+		EBEDAF2E18F683C200468890 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EBEDAF3018F683C200468890 /* MachiZmoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MachiZmoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBEDAEFF18F683C200468890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBEDAF0818F683C200468890 /* CoreGraphics.framework in Frameworks */,
+				EBEDAF0A18F683C200468890 /* UIKit.framework in Frameworks */,
+				EBEDAF0618F683C200468890 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBEDAF2018F683C200468890 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBEDAF2518F683C200468890 /* XCTest.framework in Frameworks */,
+				EBEDAF2718F683C200468890 /* UIKit.framework in Frameworks */,
+				EBEDAF2618F683C200468890 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBEDAEF918F683C200468890 = {
+			isa = PBXGroup;
+			children = (
+				EBEDAF0B18F683C200468890 /* MachiZmo */,
+				EBEDAF2A18F683C200468890 /* MachiZmoTests */,
+				EBEDAF0418F683C200468890 /* Frameworks */,
+				EBEDAF0318F683C200468890 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBEDAF0318F683C200468890 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBEDAF0218F683C200468890 /* MachiZmo.app */,
+				EBEDAF2318F683C200468890 /* MachiZmoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBEDAF0418F683C200468890 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBEDAF0518F683C200468890 /* Foundation.framework */,
+				EBEDAF0718F683C200468890 /* CoreGraphics.framework */,
+				EBEDAF0918F683C200468890 /* UIKit.framework */,
+				EBEDAF2418F683C200468890 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBEDAF0B18F683C200468890 /* MachiZmo */ = {
+			isa = PBXGroup;
+			children = (
+				EBEDAF1418F683C200468890 /* CardGameAppDelegate.h */,
+				EBEDAF1518F683C200468890 /* CardGameAppDelegate.m */,
+				EBEDAF1718F683C200468890 /* Main.storyboard */,
+				EBEDAF1A18F683C200468890 /* CardGameViewController.h */,
+				EBEDAF1B18F683C200468890 /* CardGameViewController.m */,
+				EBEDAF1D18F683C200468890 /* Images.xcassets */,
+				EBEDAF0C18F683C200468890 /* Supporting Files */,
+			);
+			path = MachiZmo;
+			sourceTree = "<group>";
+		};
+		EBEDAF0C18F683C200468890 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBEDAF0D18F683C200468890 /* MachiZmo-Info.plist */,
+				EBEDAF0E18F683C200468890 /* InfoPlist.strings */,
+				EBEDAF1118F683C200468890 /* main.m */,
+				EBEDAF1318F683C200468890 /* MachiZmo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBEDAF2A18F683C200468890 /* MachiZmoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBEDAF3018F683C200468890 /* MachiZmoTests.m */,
+				EBEDAF2B18F683C200468890 /* Supporting Files */,
+			);
+			path = MachiZmoTests;
+			sourceTree = "<group>";
+		};
+		EBEDAF2B18F683C200468890 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBEDAF2C18F683C200468890 /* MachiZmoTests-Info.plist */,
+				EBEDAF2D18F683C200468890 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBEDAF0118F683C200468890 /* MachiZmo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBEDAF3418F683C200468890 /* Build configuration list for PBXNativeTarget "MachiZmo" */;
+			buildPhases = (
+				EBEDAEFE18F683C200468890 /* Sources */,
+				EBEDAEFF18F683C200468890 /* Frameworks */,
+				EBEDAF0018F683C200468890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MachiZmo;
+			productName = MachiZmo;
+			productReference = EBEDAF0218F683C200468890 /* MachiZmo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBEDAF2218F683C200468890 /* MachiZmoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBEDAF3718F683C200468890 /* Build configuration list for PBXNativeTarget "MachiZmoTests" */;
+			buildPhases = (
+				EBEDAF1F18F683C200468890 /* Sources */,
+				EBEDAF2018F683C200468890 /* Frameworks */,
+				EBEDAF2118F683C200468890 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBEDAF2918F683C200468890 /* PBXTargetDependency */,
+			);
+			name = MachiZmoTests;
+			productName = MachiZmoTests;
+			productReference = EBEDAF2318F683C200468890 /* MachiZmoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBEDAEFA18F683C200468890 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CardGame;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Bob's Game House";
+				TargetAttributes = {
+					EBEDAF2218F683C200468890 = {
+						TestTargetID = EBEDAF0118F683C200468890;
+					};
+				};
+			};
+			buildConfigurationList = EBEDAEFD18F683C200468890 /* Build configuration list for PBXProject "MachiZmo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBEDAEF918F683C200468890;
+			productRefGroup = EBEDAF0318F683C200468890 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBEDAF0118F683C200468890 /* MachiZmo */,
+				EBEDAF2218F683C200468890 /* MachiZmoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBEDAF0018F683C200468890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBEDAF1E18F683C200468890 /* Images.xcassets in Resources */,
+				EBEDAF1018F683C200468890 /* InfoPlist.strings in Resources */,
+				EBEDAF1918F683C200468890 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBEDAF2118F683C200468890 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBEDAF2F18F683C200468890 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBEDAEFE18F683C200468890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBEDAF1618F683C200468890 /* CardGameAppDelegate.m in Sources */,
+				EBEDAF1C18F683C200468890 /* CardGameViewController.m in Sources */,
+				EBEDAF1218F683C200468890 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBEDAF1F18F683C200468890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBEDAF3118F683C200468890 /* MachiZmoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBEDAF2918F683C200468890 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBEDAF0118F683C200468890 /* MachiZmo */;
+			targetProxy = EBEDAF2818F683C200468890 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBEDAF0E18F683C200468890 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBEDAF0F18F683C200468890 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EBEDAF1718F683C200468890 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBEDAF1818F683C200468890 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBEDAF2D18F683C200468890 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBEDAF2E18F683C200468890 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBEDAF3218F683C200468890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EBEDAF3318F683C200468890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBEDAF3518F683C200468890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MachiZmo/MachiZmo-Prefix.pch";
+				INFOPLIST_FILE = "MachiZmo/MachiZmo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EBEDAF3618F683C200468890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MachiZmo/MachiZmo-Prefix.pch";
+				INFOPLIST_FILE = "MachiZmo/MachiZmo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		EBEDAF3818F683C200468890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MachiZmo.app/MachiZmo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MachiZmo/MachiZmo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MachiZmoTests/MachiZmoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		EBEDAF3918F683C200468890 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MachiZmo.app/MachiZmo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MachiZmo/MachiZmo-Prefix.pch";
+				INFOPLIST_FILE = "MachiZmoTests/MachiZmoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBEDAEFD18F683C200468890 /* Build configuration list for PBXProject "MachiZmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBEDAF3218F683C200468890 /* Debug */,
+				EBEDAF3318F683C200468890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBEDAF3418F683C200468890 /* Build configuration list for PBXNativeTarget "MachiZmo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBEDAF3518F683C200468890 /* Debug */,
+				EBEDAF3618F683C200468890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EBEDAF3718F683C200468890 /* Build configuration list for PBXNativeTarget "MachiZmoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBEDAF3818F683C200468890 /* Debug */,
+				EBEDAF3918F683C200468890 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBEDAEFA18F683C200468890 /* Project object */;
+}
