@@ -12,10 +12,10 @@
 
 @interface CardGameViewController ()
 
-@property (strong,nonatomic) Deck *cardsDeck;
 @property (strong,nonatomic) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 
 @end
 
@@ -31,11 +31,30 @@
 - (Deck *)createDeck{
     return [[PlayingCardDeck alloc]init];
 }
+- (IBAction)resetButtonPressed {
+    // reset the cards
+    [self.game resetCardsWithCount:self.cardButtons.count fromDeck:[self createDeck]];
+    // reset the UI
+    [self updateUI];
+    self.statusLabel.text = @"Game reseted.";
+    self.switchSegment.enabled = YES;
+    
+}
+- (IBAction)switchMatchNumber:(id)sender {
+    self.game.choose3Selected = !self.game.choose3Selected;
+    if (self.game.choose3Selected) {
+        self.statusLabel.text = @"Selected match 3 modes.";
+    } else {
+        self.statusLabel.text = @"Selected match 2 modes.";
+    }
+    
+}
 
 - (IBAction)touchCardButton:(UIButton *)sender {
 
+    self.switchSegment.enabled = NO;
     int cardIndex = [self.cardButtons indexOfObject:sender];
-    [self.game chooseCardAtIndex:cardIndex];
+    self.statusLabel.text = [self.game chooseCardAtIndex:cardIndex];
     [self updateUI];
 }
 
@@ -50,7 +69,7 @@
         cardButton.enabled = !card.isMached;
     }
     
-    self.scoreLabel.text = [NSString stringWithFormat:@"%d",self.game.score];
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %d",self.game.score];
 }
 - (NSString *)titleForCard:(Card *)card{
     return card.isChosen ? card.contents : @"";

@@ -10,4 +10,6 @@
 
 @interface CardGameViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UISegmentedControl *switchSegment;
+
 @end

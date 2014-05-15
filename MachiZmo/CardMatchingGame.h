@@ -13,9 +13,11 @@
 
 // designated init
 - (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *) deck;
-- (void)chooseCardAtIndex:(NSUInteger)index;
+- (NSString *)chooseCardAtIndex:(NSUInteger)index;
 - (Card *)cardAtIndex:(NSUInteger)index;
+- (void)resetCardsWithCount:(NSUInteger)count fromDeck:(Deck *)deck;
 
 @property (readonly,nonatomic) NSInteger score;
+@property (nonatomic) BOOL choose3Selected;
 
 @end

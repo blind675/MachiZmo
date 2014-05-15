@@ -22,6 +22,20 @@
     return _cards;
 }
 
+- (void)resetCardsWithCount:(NSUInteger)count fromDeck:(Deck *)deck{
+    // empty the cards array;
+    [self.cards removeAllObjects];
+    // reset score
+    self.score = 0 ;
+    // add the cards, it's a new deck so there are always cards left.
+    for (int i=0; i < count; i++) {
+        Card *randomCard = [deck drawRandomCard];
+        if (randomCard) {
+            [self.cards addObject:randomCard];
+        }
+    }
+}
+
 - (instancetype)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck{
     self = [super init];
     
@@ -47,7 +61,8 @@ static const int MATCH_BONUS = 4;
 static const int MISMATCH_PENALTY = 2;
 static const int COST_TO_CHOSE = 1;
 
-- (void)chooseCardAtIndex:(NSUInteger)index{
+- (NSString *)chooseCardAtIndex:(NSUInteger)index{
+    NSString *statusText;
     Card *card = [self cardAtIndex:index];
     
     if (!card.isMached) {
@@ -73,6 +88,7 @@ static const int COST_TO_CHOSE = 1;
             card.chosen = YES;
         }
     }
+    return statusText;
 }
 
 @end
